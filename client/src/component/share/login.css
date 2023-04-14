@@ -1,0 +1,116 @@
+.login, .signup{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-box p{
+    font-size: 15px;
+    color: var(--dark-blue);
+    margin: 0;
+}
+
+.login .auth-box p{
+    
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:650px) {
+    .auth-box p{
+        font-size: 10px;
+        
+      }
+
+      .login .auth-box p{
+        font-size: 10px;
+        margin-bottom: 20px;
+      }
+}
+
+.login .orange-text,
+.signup .orange-text{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login .orange-text:hover{
+    color: var(--deep-orange);
+}
+
+.signup .orange-text:hover{
+    color: var(--deep-orange);
+}
+
+.popUpContainer{
+    position: absolute;
+    background-color: rgba(8, 8, 8, 0.3);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popUpContainer.hide{
+    display: none;
+}
+
+.popUpBox{
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 30px;
+    border-radius: 5pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+.close{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+p.error{
+    padding: 0;
+    margin: 0;
+    color: red;
+    font-size: 12px;
+    width: 80%;
+    text-align: left;
+}
+
+.form-input{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.additional{
+    
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.login form ,
+.signup form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: none;
+    background-color: transparent;
+}

@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Landing Page component correctly 1`] = `
+<div>
+  <div
+    class="landingContainer"
+  >
+    <div
+      class="header"
+    >
+      Best Choice to Learn and Test your Korean Skill.
+    </div>
+    <p
+      class="slogan"
+    >
+      Solve 
+      <span
+        class="orange-text"
+      >
+        Quiz
+      </span>
+       and Earn 
+      <span
+        class="orange-text"
+      >
+        Points
+      </span>
+    </p>
+    <div
+      class="flex"
+    >
+      <a
+        href="/signup/student"
+      >
+        <div
+          class="button-primary"
+        >
+          Get Started 
+        </div>
+      </a>
+      <a
+        class="link"
+        href="/signup/teacher"
+      >
+        <div
+          class="button-transparent"
+        >
+          Become a Teacher 
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;

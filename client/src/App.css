@@ -1,0 +1,157 @@
+.App{
+  height: 100vh;
+  background-color: var(--sky-blue);
+  
+}
+
+.logo{
+  z-index: 100;
+  width: 100px;
+  position: absolute;
+  cursor: pointer;
+  padding: 20px 40px;
+  position: fixed;
+}
+.header{
+  font-family: 'Merriweather', serif;
+
+}
+
+button{
+  font-family: 'Poppins', sans-serif;
+}
+
+button.button-primary{
+  background-color: var(--deep-orange);
+  color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  width: fit-content;
+  min-width: 80px;
+  border-radius: 5pt;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-size: 20px;
+  text-align: center;
+}
+
+.button-primary{
+  background-color: var(--deep-orange);
+  color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  width: fit-content;
+  min-width: 80px;
+  border-radius: 5pt;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-size: 20px;
+  text-align: center;
+}
+
+.button-primary:hover{
+  background-color: var(--light-orange);
+}
+
+.button-transparent{
+  background-color: transparent;
+  border: solid 1px var(--deep-orange);
+  color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  width: fit-content;
+  min-width: 80px;
+  border-radius: 5pt;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  font-size: 20px;
+  text-align: center;
+}
+
+.button-transparent:hover{
+  background-color: var(--deep-orange);
+}
+.auth-box{
+  background-color: var(--light-blue);
+  height: auto;
+  min-height: 500px;
+  width: 400px;
+  box-shadow: var(--box-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10pt;
+  
+}
+
+.auth-box .subheader{
+
+padding: 50px 10px 10px 10px;
+font-size: 30px;
+font-weight: 600;
+text-align: center;
+}
+
+.auth-box form{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 30px;
+padding: 30px 0;
+
+flex: 1;
+width: 100%;
+}
+
+.auth-box form input{
+  border: none;
+  width: 80%;
+  height: 40px;
+  padding: 0 5px;
+
+  
+  background-color: var(--sky-blue);
+}
+
+input:focus{
+  outline: none;
+}
+
+::placeholder{
+  color: rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width:650px) {
+  .button-primary, .button-transparent{
+    font-size: 15px;
+  }
+
+  .logo{
+    width: 70px;
+    padding-left: 20px;
+  }
+
+  .auth-box{
+    width: 95%;
+  }
+
+ 
+  .auth-box .subheader{
+    padding: 20px 10px;
+
+  }
+
+  .auth-box form{
+    gap: 20px;
+  }
+
+  
+}
+
+.link{
+  color: black;
+}
+
+.flex{
+  display: flex;
+  gap: 10px;
+}

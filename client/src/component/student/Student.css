@@ -1,0 +1,464 @@
+.studentContainer{
+    height: 100vh;
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    box-shadow: var(--box-border);
+    position: fixed;
+    width: 100%;
+    background-color: var(--light-gray);
+    z-index: 2;
+}
+
+nav .icon{
+    font-size: 20px;
+}
+
+nav ul{
+    display: flex;
+    padding: 20px 10px;
+    justify-content: end;
+    gap: 30px;
+}
+
+li{
+    cursor: pointer;
+}
+
+li:hover,
+.link:hover{
+color: var(--deep-orange);
+}
+
+nav ul li:nth-child(3){
+    margin-right: 50px;
+}
+
+.main{
+    flex: 1;
+    display: flex;
+    background-size: 70vw;
+    background-repeat: no-repeat;
+    background-position-y: 150%;
+    background-position-x: 50%;
+    margin-top: 65px;
+    background-color: var(--light-gray);
+    
+}
+
+
+
+
+.sideMenu{
+    background-color: var(--light-gray);
+    min-width: 20%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;;
+}
+
+.profiles{
+    display: flex;
+     
+    gap: 10px;
+    padding: 20px 20px;
+    position: relative;
+    align-items: flex-end;
+    border-bottom: solid 1px rgb(192, 192, 192) ;
+}
+
+.profile p{
+    margin: 0;
+}
+.profile{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.profPict{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: var(--dark-blue);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.profPict-edit{
+    background-color: rgb(199, 199, 199,0.5);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transform: translateY(100%);
+    transition: all 0.5s ease;
+
+}
+
+.profPict:hover .profPict-edit{
+    transform: translateY(0);
+}
+
+.sideMenu .icon{
+    position: absolute;
+    right: 10px;
+    top: 40px;
+   color: #979797;
+   cursor: pointer;
+}
+
+.menu{
+    
+    flex: 1;
+    
+}
+.menu .item{
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 40px;
+    gap: 20px;
+    cursor: pointer;
+    color: black;
+    transition: all 0.3s linear;
+}
+
+
+
+.menu .item:hover .icon,
+.menu .item:hover{
+    color: var(--deep-orange);
+}
+
+.menu .item.active{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: var(--deep-orange);
+
+}
+
+.menu .item.active .icon{
+    color: var(--deep-orange);
+}
+
+.menu .icon{
+    position: static;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    cursor: auto;
+    display: flex;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px 40px;
+}
+
+.bodyTitle{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    
+}
+
+.dashboard{
+    
+    gap: 20px;
+    flex: 1;
+    
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.left{
+gap: 10px;
+display: flex;
+flex-direction: column;
+}
+
+.summary{
+    gap: 10px;
+    display: flex;
+    
+    
+    flex-wrap: wrap;
+   
+    
+}
+
+.dbBox .flex .secondary-button{
+    margin-left: 0;
+    background-color: transparent;
+    border: solid 1px var(--sky-blue);
+}
+
+.dbBox .flex .secondary-button.active{
+    background-color: var(--sky-blue);
+    border: none;
+}
+
+
+.graphContainer{
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.dbBox{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    border-radius: 5pt;
+    display: flex;
+    gap: 20px;
+    
+    
+}
+
+.dbBox-name{
+    color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.dbBox-name .dbNumber{
+    font-size: 30px;
+    color: var(--deep-orange);
+}
+
+.dbBox.activeChat{
+    flex-direction: column;
+}
+
+.dbBox.activeChat p{
+    margin: 0;
+    
+}
+
+.activeChat .title{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.smallgraph{
+    width: 50px;
+}
+
+.icon:hover{
+    color: var(--deep-orange);
+}
+.right{
+    
+    flex: 1;
+}
+
+.profPict-small{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #979797;
+    position: relative;
+}
+.chatProfile{
+    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.secondary-button{
+    background-color: var(--sky-blue);
+    padding: 5px 20px;
+    border-radius: 5pt;
+    margin-left: auto;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.secondary-button:hover{
+    background-color: var(--dark-blue);
+}
+
+.activeState{
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 0);
+    display: block;
+}
+
+.bodyContent{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    height: 100%;
+    display: flex;
+}
+
+.content.hide{
+    display: none;
+}
+
+.radar-chart{
+    
+    flex: 1;
+    min-height: 300px;
+}
+
+@media screen and (max-width:950px) {
+    .sideMenu{
+        min-width: 25%;
+        font-size: 14px;
+    }
+    .recordTable{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:730px) {
+    .sideMenu{
+        min-width: 28%;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .main{
+        flex-direction: column;
+        background-position-y: 100%;
+        background-position-x: 0%;
+        background-size: 100vw;
+        height: auto;
+        
+    }
+
+    .sideMenu{
+        width: 100%;
+        border-bottom: solid 1px rgb(202, 202, 202);
+    }
+
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 0;
+    }
+    
+    .body{
+        height: auto;
+       
+    }
+
+    .menu .item{
+        padding: 10px;
+        flex: 1;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .chatProfile{
+        gap: 5px;
+        flex-direction: column;
+    } 
+    
+    .chatProfile .secondary-button{
+        
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:1325px) {
+    .dashboard, 
+    .secondary-button{
+        font-size: 13px;
+    }
+    .dbBox{
+        padding: 10px;  
+        flex: 1 1 0px;
+      }
+      
+}
+
+@media screen and (max-width:1095px) {
+.dashboard{
+    flex-direction: column;
+   
+}
+
+  .chatProfile{
+    
+    flex-direction: row;
+} 
+}
+
+@media screen and (max-width:650px) {
+.menu{
+    flex-direction: column;
+}
+.menu-item{
+    display: flex;
+}
+
+.summary .dbBox{
+    flex-direction: column;
+    gap: 0px;
+}
+.profiles{
+    align-items: center;
+    padding: 10px;
+}
+
+.profile{
+    flex-direction: row;
+    
+    flex: 1;
+    justify-content: space-between;
+}
+
+.profPict{
+    height: 30px;
+    width: 30px;
+}
+
+.profPict-edit{
+    font-size: 20px;
+}
+
+.dashboard{
+    padding-left: 10px;
+}
+}
+
+@media screen and (max-width:400px) {
+    .dashboard,
+    .item{
+        font-size: 13px;
+    }
+
+    .menu .item{
+        gap: 5px;
+    }
+}

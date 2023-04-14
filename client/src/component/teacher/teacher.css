@@ -1,0 +1,30 @@
+.teacher li:last-child{
+    margin-right: 50px;
+}
+
+.chatRequest{
+    display: flex;
+    position: relative;
+    border-bottom: solid 1px rgb(214, 214, 214);
+    justify-content: space-between;
+}
+
+.acceptRequest{
+    background-color:rgb(214, 214, 214) ;
+    cursor: pointer;
+    padding: 5px 8px;
+    border-radius: 5pt;
+    margin-bottom: 5px;
+}
+
+.acceptRequest:hover{
+    background-color:rgb(189, 189, 189) ;
+}
+
+.chatRoomType button{
+    background-color: transparent;
+}
+
+.chatTyping{
+    width: 100%;
+}

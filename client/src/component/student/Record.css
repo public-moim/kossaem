@@ -1,0 +1,95 @@
+.record{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+@media screen and (max-width:650px) {
+    .record{
+        padding-left: 10px;
+    }
+    
+}
+
+
+.search-boxContainer{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.search-box{
+    display: flex;
+    border: none;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.search-box form{
+    box-shadow: none;
+    
+}
+
+@media screen and (max-width:650px) {
+    .search-box form{
+        gap: 0px;
+        
+    }
+}
+.search-flex{
+    display: flex;
+    flex-direction: row;
+}
+.search-box input{
+    height: 30px;
+    padding: 5px;
+}
+
+.search-box .icon{
+    display: flex;
+    align-items: center;
+}
+
+input{
+    border-radius: 5pt;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: var(--light-gray);
+    border: none;
+    
+}
+
+.pagination{
+    margin-top: auto;
+    
+    text-align: center;
+}
+
+.recordBox{
+    
+    flex: 1;
+}
+
+.react-player{
+    
+    height: 30px;
+    position: relative;
+    width: 90%;
+}
+
+@media screen and (max-width:650px) {
+    .search-box{
+        margin-bottom: 20px;
+    }
+    .search-box input {
+        height: 20px;
+        padding: 5px;
+    }
+
+    .react-player{
+        width: 100%;
+    }
+}
+

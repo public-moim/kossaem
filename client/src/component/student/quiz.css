@@ -1,0 +1,233 @@
+.box1{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    
+}
+
+
+.quizProblem{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: 90%;
+}
+
+.quizProblem.box{
+    width: 100%;
+}
+.questionBox{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5pt;
+    padding: 30px 0;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+label{
+    margin-left: 20px;
+}
+
+.quizResult{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    
+    height: 100%;
+}
+
+.result{
+font-size: 60px;
+text-align: center;
+font-weight: 600;
+
+}
+
+.light-text{
+    color: gray;
+    margin: 0;
+}
+
+.quizResult .button-primary{
+    margin-top: 100px;
+    transition: none;
+}
+
+.chat{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+.chat .bodyTitle{
+    font-size: 35px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.chat .button-primary{
+    margin-top: 100px;
+}
+
+.chatRoom{
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.chatRoom nav{
+    background-color: var(--light-gray);
+    position: fixed;
+    width: 100%;
+}
+
+
+.chatRoom nav li{
+    margin-right: 20px;
+}
+
+.chatRoom .main{
+    margin-top: 65px;
+}
+.chatRoom .sideMenu{
+    position: fixed;
+    height: 100%;
+    
+}
+
+.profiles-small{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+    padding-left: 30px;
+}
+
+.chatRoom .body{
+    padding: 0;
+    margin-left: 300px;
+}
+
+.chatRoomBody{
+    overflow: auto;
+    
+}
+.chatRoomName{
+    background-color: var(--dark-blue);
+    font-size: 25px;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+
+}
+
+.chatRoomChat{
+    background-color: var(--sky-blue);
+    overflow: auto;
+    margin-top: 100px;
+    padding: 10px 20px 50px;
+}
+
+.msgOther,
+.msgYours{
+    
+    width: 100%;
+}
+
+.msgOther{
+    display: flex;
+    justify-content: start;
+}
+
+.msgYours{
+    display: flex;
+    justify-content: end;
+}
+.msgOther .content{
+    background-color: var(--light-blue);
+    width: fit-content;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 5pt;
+    max-width: 40%;
+}
+
+.msgYours .content{
+    background-color: var(--light-blue);
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5pt;
+    max-width: 40%;
+}
+
+.chatRoomType{
+    width: calc(100% - 320px);
+    
+   position: fixed;
+   bottom: 0;
+   padding: 5px 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+
+}
+
+.chatRoomType input{
+    flex: 1;
+    border-radius: 10pt;
+    border: none;
+    
+    padding: 10px 20px;
+    position: relative;
+}
+
+.chatSend{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+.center{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+   
+}
+
+.media{
+    width: 100%;
+}
+
+@media screen and (max-width:650px) {
+    .admin .body{
+       padding: 5px; 
+    }
+
+    .box1{
+        padding: 0;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,218 @@
+.addQuiz{
+    width: 100%;
+    padding-right: 10px;
+    padding-top: 15px;
+    position: relative;
+}
+ form{
+padding: 10px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+background-color: var(--light-gray);
+}
+
+.addQuiz input{
+    background-color: white;
+    width: 400px;
+}
+
+.admin li:nth-child(2){
+    margin-right: 50px ;
+}
+
+.answerOption{
+    display: flex;
+    align-self: start;
+    gap: 20px;
+    
+}
+
+.answerOption .secondary-button{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+.addAnswer{
+  display: flex;
+  gap: 30px;
+}
+
+textarea{
+    border:none;
+    box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+    border-radius: 5pt;
+    font-family: inherit;
+    outline: none;
+    padding: 5px;
+}
+
+.optionList .item{
+    background-color: rgb(230, 230, 230);
+    width: fit-content;
+    margin: 5px 0;
+    border-radius: 5pt;
+    padding: 5px;
+    position: relative;
+    font-size: 12px;
+}
+
+.closeBtn{
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+button{
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.media{
+    display: flex;
+    flex-direction: column;
+}
+
+.media label{
+    margin: 0;
+}
+
+.toDetails{
+    cursor: pointer;
+}
+
+.admin .content{
+   display: flex;
+}
+
+.detailsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.details{
+    
+    flex: 1;
+}
+
+
+
+.operations > *{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.md{
+    font-size: 20px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.mediaUpload .icon{
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: bounce 2s infinite ease;
+}
+
+.red{
+    color: red;
+}
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-5px);}
+    100% {transform: translateY(0);}
+}
+
+select{
+    border-radius: 5pt;
+    width: 400px;
+    border: none;
+    box-shadow: rgb(0 0 0 / 2%) 0px 1px 3px 0px, rgb(27 31 35 / 15%) 0px 0px 0px 1px;
+    padding: 1px 2px;
+    outline: none;
+    height: 30px;
+}
+
+select:active{
+    border: none;
+}
+
+.select{
+    color: antiquewhite;
+}
+
+.absolute{
+    position: absolute;
+    transform: translate(-10%,30%);
+    
+}
+
+.editContainer{
+    position: relative;
+}
+
+.close-form{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+}
+
+@media screen and (max-width:800px) {
+    select{
+        width: 100%;
+        
+    }
+
+    .addQuiz{
+        padding-left: 10px;
+    }
+
+    .addQuiz input{
+        
+        width: 70%;
+    }
+
+    .absolute{
+        transform: translate(0%);
+    }
+}
+
+@media screen and (max-width:800px) {
+    .addAnswer{
+        flex-direction: column;
+    }
+
+    .optionList{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        flex-flow: row wrap;
+        
+    }
+
+  
+    
+}
+
+.answerOption .answer-form{
+    padding: 0px;
+    box-shadow: none;
+}
+
+.answer-form input{
+    padding: 1px 2px;
+    height: 30px;
+}
